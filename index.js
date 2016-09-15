@@ -1,3 +1,4 @@
+console.log(process.env);
 if(!process.env.MONGODB_URI) {
   require('dotenv').config();
 }
