@@ -1,0 +1,23 @@
+{
+  "name": "oliza",
+  "version": "1.0.0",
+  "description": "<p>Website for Oliza Co.</p>",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Harrisonkamau/oliza.git"
+  },
+  "author": "Harrison Kamau",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Harrisonkamau/oliza/issues"
+  },
+  "homepage": "https://github.com/Harrisonkamau/oliza#readme",
+  "dependencies": {
+    "body-parser": "^1.15.2",
+    "express": "^4.14.0"
+  }
+}
