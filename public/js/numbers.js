@@ -1,7 +1,5 @@
 $( document ).on( "ready", function() {
-  alert('afddsaf');
   $("#sendsms").submit(function(e) {
-    console.log(e)
     e.preventDefault();
     $.ajax({
       type: 'post',
