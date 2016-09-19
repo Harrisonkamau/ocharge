@@ -111,3 +111,20 @@ $(function() {
     $(".de-off").removeClass("de-on");
   });
 });
+
+// SMS link
+$('.message-sent').hide();
+$(function(){
+	$('.msg-lnk').submit(function(){
+		$('.message-link').fadeOut();
+		$('.message-sent').fadeIn();
+	});
+});
+// Contact form
+$('.contact-message').hide();
+$(function(){
+  $('.cnt-lnk').submit(function(){
+    $('.contact-form').fadeOut();
+    $('.contact-message').fadeIn();
+  });
+});

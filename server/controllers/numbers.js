@@ -56,7 +56,8 @@ module.exports = {
       post_req.write(post_data);
 
       post_req.end();
-      res.send('Successfully added number');
+      
+      // res.send('Successfully added number');
     });
   }
 };
