@@ -10,6 +10,7 @@ var mongoose = require('mongoose');
 var bodyParser = require('body-parser');
 
 var port = process.env.PORT || 3000
+mongoose.Promise = global.Promise;
 mongoose.connect(process.env.MONGODB_URI);
 var db = mongoose.connection;
 
