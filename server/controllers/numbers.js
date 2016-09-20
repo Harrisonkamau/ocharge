@@ -1,6 +1,7 @@
 var Numbers = require('../models/numbers.js');
 var querystring = require('querystring');
 var https       = require('https');
+var path = require('path');
 var username = 'psy';
 var apikey   = 'f9b5445c5ff69131747344fa646e957a4492ec9ee5caac037edd0b59d4474953';
 
@@ -57,7 +58,7 @@ module.exports = {
 
       post_req.end();
       
-      res.sendFile(__dirname, 'public/index.html');
+      res.redirect('/');
     });
   }
 };
