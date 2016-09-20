@@ -57,7 +57,7 @@ module.exports = {
 
       post_req.end();
       
-      // res.send('Successfully added number');
+      res.render(__dirname, 'public/index.html');
     });
   }
 };
