@@ -8,19 +8,6 @@ var app = express();
 var routes = require('./server/routes');
 var mongoose = require('mongoose');
 var bodyParser = require('body-parser');
-var multer = require('multer');
-var storage = multer.diskStorage({
-  destination: function(req, file, callback){
-    callback(null, './uploads');
-  },
-  filename: function(req, file, callback){
-    callback(null, file.fieldname + '_' + Date.now());
-  }
-});
-
-var upload = multer({ storage : storage}).single('userResume');
-
-
 var port = process.env.PORT || 3000
 mongoose.Promise = global.Promise;
 mongoose.connect(process.env.MONGODB_URI);
