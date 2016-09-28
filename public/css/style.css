@@ -195,7 +195,7 @@ li{
   .br {
   	padding-right: 2%;
     display: block !important;
-    margin-top: 7px; 
+    margin-top: -5%; 
   }
   .icn-home, .icn-home:hover{
 		color: #fff;
@@ -245,15 +245,15 @@ li{
 		width: 20%;
 	}
 	.play, .play-home{
-		margin-right: 2%;
+		margin-right: 6%;
 		margin-top: -6.5%;
-		height: 28% !important;
-		width: 28% !important;
+		height: 21% !important;
+		width: 21% !important;
 	}
   .br {
   	padding-right: 2%;
     display: block !important;
-    margin-top: 0%; }
+    margin-top: -6.5%; }
 }
 @media screen and (max-width: 500px){
 	.log{
@@ -261,11 +261,16 @@ li{
 		width: 25%;
 	}
 	.play, .play-home{
-		margin-right: 2%;
+		margin-right: 6%;
 		margin-top: -8%;
-		height: 30% !important;
-		width: 30% !important;
+		height: 26% !important;
+		width: 26% !important;
 	}
+	.br {
+  	padding-right: 2%;
+    display: block !important;
+    margin-top: -8%; 
+  }
 }
 @media screen and (max-width: 400px){
 	.log{
@@ -273,11 +278,16 @@ li{
 		width: 35%;
 	}
 	.play, .play-home{
-		margin-right: 4%;
+		margin-right: 9%;
 		margin-top: -11%;
-		height: 42% !important;
-		width: 42% !important;
+		height: 38% !important;
+		width: 38% !important;
 	}
+	.br {
+  	padding-right: 2%;
+    display: block !important;
+    margin-top: -11%; 
+  }
 }
 
 /****************/
