@@ -36,9 +36,8 @@
 				<li class="br"><a class="icn"><i class="fa fa-bars"></i></a></li>
 			</div>
 			<div>
-				<a href=""><img src="assets/google-play-badge.png" class="play right"></a>
+				<a href="https://play.google.com/store/apps/details?id=com.ocharge"><img src="assets/google-play-badge.png" class="play right"></a>
 			</div>
-			 <hr class="r">
 				<div class="links hide-nav">
 				<li class="li"><a class="anchors" href="index.html">Home</a></li>
 				<li class="li"><a class="anchors" href="about.html">About</a></li>
@@ -221,31 +220,8 @@
 	<!-- *********** -->
 	<!-- End of Footer -->
 	<!-- *********** -->	
-	<script  src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
 	<script src="javascript/foundation.min.js"></script>
 	<script src="javascript/scroll.min.js"></script>
 	<script src="javascript/app.min.js"></script><!--PS: This is the main JS!!!! -->
-
-	<script>
-			$('#resume').change(function(e){
-				var file = e.target.files[0];
-				var formData = new FormData();
-				formData.append('resume', file, file.name);
-
-				// post using Ajax
-				$.ajax({
-					url: 'http://localhost:3000/upload',
-					type: 'post',
-					data: formData,
-					processData: false,
-					contentType: false,
-					success: function(){
-						
-					},
-					crossDomain: true
-				});
-
-			});
-		</script>
 </body>
 </html>
