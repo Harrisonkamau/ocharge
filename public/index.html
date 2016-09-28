@@ -19,7 +19,7 @@
   <link href='assets/favicon/152x152.png' rel='shortuct-icon' sizes='152x152'>
 	<link rel="stylesheet" href="css/animate.min.css">
 	<link rel="stylesheet" href="css/foundation.min.css">
-	<link rel="stylesheet" href="css/style.min.css"><!--PS: This is the main CSS!!!! -->
+	<link rel="stylesheet" href="css/style.css"><!--PS: This is the main CSS!!!! -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 	<link href="https://fonts.googleapis.com/css?family=Quicksand:300,400,700" rel="stylesheet">
 	<link href="https://code.jquery.com/ui/1.10.4/themes/ui-lightness/jquery-ui.css" rel="stylesheet">
@@ -35,45 +35,42 @@
 		<div class="nav-home">
 			<div>
 				<a href="index.html"><img src="assets/logo-red.png" class="clear-bg log"></a>
-				<li class="br"><a class="icn-home"><i class="fa fa-bars"></i></a></li>
+				<li class="br right"><a class="icn-home"><i class="fa fa-bars"></i></a></li>
 			</div>
 			<div>
-				<a href=""><img src="assets/google-play-badge.png" class="play-home right"></a>
+				<a href="https://play.google.com/store/apps/details?id=com.ocharge"><img src="assets/google-play-badge.png" class="play-home right"></a>
 			</div>
-			<hr class="r">
 			<div class="links hide-nav">
 				<li class="li"><a class="anchors-home" href="about.html">About</a></li>
 				<li class="li"><a class="anchors-home" href="contact.html">Contact</a></li>
 				<li class="li"><a class="anchors-home" href="ombassador.html">Ombassador</a></li>
-				<li class="zero">.</li>
 			</div>
 		</div>
 		<!-- With background -->
 		<div class="nav">
 			<div>
 				<a href="index.html"><img src="assets/logo-white.png" class="red-bg log"></a>
-				<li class="br"><a class="icn"><i class="fa fa-bars"></i></a></li>
+				<li class="br right"><a class="icn"><i class="fa fa-bars"></i></a></li>
 			</div>
 			<div>
 				<a href=""><img src="assets/google-play-badge.png" class="play right"></a>
 			</div>
-			<hr class="r">
+			
 			<div class="links hide-nav">
 				<li class="li"><a class="anchors" href="about.html">About</a></li>
 				<li class="li"><a class="anchors" href="contact.html">Contact</a></li>
 				<li class="li"><a class="anchors" href="ombassador.html">Ombassador</a></li>
-				<li class="zero">.</li>
 			</div>
 		</div>
 		<!-- End on Navigation -->
 		<br>
 		<div class="row up-move">
 			<div class="large-6 medium-6 columns right cent">
-				<img src="assets/stuff.png">
+				<img class="reduce" src="assets/stuff.png">
 				<p class="cent"><a href="https://player.vimeo.com/video/181299321" target="player" class="button btn">Find out here &nbsp; &#9655;</a></p>
 			</div>
 			<div class="large-6 medium-6 columns left cent" style="bottom:0;">
-				<img src="assets/topphone.png">
+				<img class="reduce" src="assets/topphone.png">
 			</div>
 		</div>
 	</div>
@@ -83,7 +80,7 @@
 <br>
 	<div class="row">
 		<p class="cent bg">Get rewarded with <b>Deals and Discounts</b> from <br>
-		your favourite brands around you, everytime you <br> <b>Top-Up your airtime</b> using Ocharge</p>
+		your favourite brands around you, everytime you <br> <b>Top-Up your airtime</b> using OCharge</p>
 	</div>
 	<br>
 	<br>
@@ -104,7 +101,7 @@
 			<a class="points">
 				<div class="off-po">
 					<p class="bg-red"><b>Earn Points</b></p>
-					<p style="color: black;">Earn points Equivalent to the<br> amount you've spent on Aitrime<b>1 Shilling Airtime = 1 Ocharge Point</b>
+					<p style="color: black;">Earn points Equivalent to the<br> amount you've spent on Airtime<b><br>1 Shilling Airtime = 1 OCharge Point</b>
 					</p>
 				</div>
 				<br>
@@ -147,7 +144,7 @@
 		<form class="message-link msg-lnk" method="post" action="/api/numbers">
 		<div class="large-2 medium-2 columns zero">.</div>
 		<div class="cent large-5 medium-5 columns">
-			<input type="text" name="phone" placeholder="+254" required>
+			<input type="text" name="phone" id="phone" value="+254" maxlength="13" minlength="13" required>
 		</div>
 		<div class="cent large-3 medium-3 columns">
 			<input type="submit" name="submit" class="button back-rd" value="Send a link" style="width:100%">
@@ -178,18 +175,20 @@
 	<br>
 		<div class="row">
 			<div class="large-4 medium-4 columns">
-				<p class="mdim"><b>About</b></p>
+				<b class='mdim'>About</b>
 					<li><a class="foot" href="about.html">Company</a></li>
 					<li><a class="foot" href="">Investors -ISON Group</a></li>
 					<li><a class="foot" href="contact.html">Contact</a></li>
 			</div>
+			<br class="br">
 			<div class="large-4 medium-4 columns">
-				<p class="mdim"><b>Legal</b></p>
+				<b class='mdim'>Legal</b>
 					<li><a class="foot" href="">Terms and Conditions</a></li>
 					<li><a class="foot" href="">Privacy Policy</a></li>
 			</div>
+			<br class="br">
 			<div class="large-4 medium-4 columns">
-				<p class="mdim"><b>Work with us</b></p>
+				<b class='mdim'>Work with us</b>
 					<li><a class="foot" href="">Careers</a></li>
 					<li><a class="foot" href="ombassador.html">Ombassadors Internship</a></li>
 			</div>
@@ -201,7 +200,7 @@
      <a class="social" href="https://www.instagram.com/ochargeke/" target="_ig"><i class="fa fa-instagram"></i></a>
 		</p>
 		<hr>
-		<p class="cent" style="font-size:12px;margin-bottom:0;"><img src="assets/powered_white.png" height="10%" width="10%"><br> Copyright &copy;  <script>
+		<p class="cent" style="font-size:12px;margin-bottom:0;"><img src="assets/powered_white.png" class="powered"><br> Copyright &copy;  <script>
 			var theDate=new Date();
 			document.write(theDate.getFullYear());
 			</script> Oliza. All Rights Reserved.
@@ -211,8 +210,8 @@
 	<!-- End of Footer -->
 	<!-- *********** -->	
 	<script src="javascript/foundation.min.js"></script>
-	<script src="javascript/scroll.min.js"></script>
-	<script src="javascript/home-nav.min.js"></script>
-	<script src="javascript/app.min.js"></script><!--PS: This is the main JS!!!! -->
+	<script src="javascript/scroll.min.js" async></script>
+	<script src="javascript/home-nav.min.js" async></script>
+	<script src="javascript/app.js" async></script><!--PS: This is the main JS!!!! -->
 </body>
 </html>
