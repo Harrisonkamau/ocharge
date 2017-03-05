@@ -7,8 +7,8 @@ var https       = require('https');
 var path = require('path');
 var username = process.env.API_USERNAME;
 var apikey   = process.env.API_KEY;
-console.log(apikey);
 
+// module for export
 module.exports = {
   add: function(req, res) {
     var newNumber = new Numbers({ number: req.body.phone });
